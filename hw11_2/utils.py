@@ -43,3 +43,4 @@ def get_candidates_by_skill(skill_name: str):
         skills = candidate['skills'].lower().split(', ')
         if skill_name.lower() in skills:
             candidates.append(candidate)
+    return candidates

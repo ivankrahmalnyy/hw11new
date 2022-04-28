@@ -25,4 +25,4 @@ def get_skills(skill):
     candidates = get_candidates_by_skill(skill)
     return render_template('skills.html', candidates=candidates, candidates_len=len(candidates), skill=skill)
 
-app.run()
+app.run(port=2406)
